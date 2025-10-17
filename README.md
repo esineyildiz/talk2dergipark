@@ -60,13 +60,13 @@ Academic literature review is time-intensive. Researchers often need to quickly 
 
 ## 🏗️ Technical Architecture
 ```
-┌─────────────────┐
+┌───────────────────┐
 │  Chrome Extension │  (Manifest V3, Side Panel API)
-│   popup.html/js  │
-└────────┬─────────┘
+│   popup.html/js   │
+└────────┬──────────┘
          │ HTTP/REST
          ▼
-┌─────────────────┐
+┌──────────────────┐
 │  FastAPI Backend │  (Python 3.10+)
 │   backend.py     │
 └────────┬─────────┘
@@ -304,6 +304,6 @@ This project is open source and available under the MIT License.
 ## 📧 Contact
 
 **Esin Ezgi Yildiz** - [@esineyildiz](https://github.com/esineyildiz)
-
-Project Link: [https://github.com/esineyildiz/talk2dergipark](https://github.com/esineyildiz/talk2dergipark)
+📧 Email: esinezgiyildiz@gmail.com  
+🔗 [LinkedIn](https://www.linkedin.com/in/esin-ezgi-yildiz/)  
 
