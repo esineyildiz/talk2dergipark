@@ -1,0 +1,10 @@
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+google-generativeai==0.3.1
+openai==1.3.5
+chromadb==0.4.18
+pdfplumber==0.10.3
+requests==2.31.0
+beautifulsoup4==4.12.2
+langchain==0.0.340
+streamlit==1.28.1

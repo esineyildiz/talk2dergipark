@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Talk2Dergipark",
+    "version": "1.0",
+    "description": "Chat with Dergipark papers",
+    "permissions": ["activeTab", "storage", "sidePanel"],
+    "action": {
+      "default_title": "Open Talk2Dergipark"
+    },
+    "side_panel": {
+      "default_path": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://dergipark.org.tr/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "background": {
+      "service_worker": "background.js"
+    }
+  }
