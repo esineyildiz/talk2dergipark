@@ -2,13 +2,15 @@
 
 > A RAG-powered Chrome extension for conversational interaction with Turkish academic papers from DergiPark
 
-[![Demo Video](https://img.youtube.com/vi/r3IoqzohBo0/0.jpg)](https://www.youtube.com/watch?v=r3IoqzohBo0) 
+## Click on the image for the video! 
+<a href="https://www.youtube.com/watch?v=r3IoqzohBo0">
+  <img width="800" alt="Demo Video" src="https://github.com/user-attachments/assets/8ca27159-bdbb-4c97-a79e-3f0e1838a3ba" />
+</a>
+
+### **Chrome Extension:** Available in this repository 
 
 
-**Chrome Extension:** Available in this repository 
-
-
-**Developer:** [@esineyildiz](https://github.com/esineyildiz) 
+### **Developer:** [@esineyildiz](https://github.com/esineyildiz) 
 
 [Coming Soon - Streamlit Deployment] 
 
