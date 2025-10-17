@@ -2,10 +2,12 @@
 
 > A RAG-powered Chrome extension for conversational interaction with Turkish academic papers from DergiPark
 
-## Click on the image for the video! 
+
 <a href="https://www.youtube.com/watch?v=r3IoqzohBo0">
   <img width="800" alt="Demo Video" src="https://github.com/user-attachments/assets/8ca27159-bdbb-4c97-a79e-3f0e1838a3ba" />
 </a>
+
+**[🎥 Watch full demo on YouTube →](https://www.youtube.com/watch?v=r3IoqzohBo0)**
 
 ### **Chrome Extension:** Available in this repository 
 
@@ -303,7 +305,9 @@ This project is open source and available under the MIT License.
 
 ## 📧 Contact
 
-**Esin Ezgi Yildiz** - [@esineyildiz](https://github.com/esineyildiz)
-📧 Email: esinezgiyildiz@gmail.com  
+**Esin Ezgi Yildiz** - [@esineyildiz](https://github.com/esineyildiz) 
+
+📧 Email: esinezgiyildiz@gmail.com 
+
 🔗 [LinkedIn](https://www.linkedin.com/in/esin-ezgi-yildiz/)  
 
