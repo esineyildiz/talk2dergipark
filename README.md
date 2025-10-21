@@ -60,34 +60,6 @@ Academic literature review is time-intensive. Researchers often need to quickly 
 
 ---
 
-## 🏗️ Technical Architecture
-```
-┌───────────────────┐
-│  Chrome Extension │  (Manifest V3, Side Panel API)
-│   popup.html/js   │
-└────────┬──────────┘
-         │ HTTP/REST
-         ▼
-┌──────────────────┐
-│  FastAPI Backend │  (Python 3.10+)
-│   backend.py     │
-└────────┬─────────┘
-         │
-    ┌────┴────┐
-    │         │
-    ▼         ▼
-┌──────┐  ┌──────────┐
-│Gemini│  │ OpenAI   │
-│ API  │  │ GPT-4o   │
-└──────┘  └──────────┘
-    │         │
-    └────┬────┘
-         ▼
-    ┌─────────┐
-    │ChromaDB │  (In-memory vector store)
-    └─────────┘
-```
-
 ### Core Components
 
 **1. Document Processing Pipeline**
@@ -235,15 +207,17 @@ Backend will be available at `http://127.0.0.1:8000`
 ```
 talk2dergipark/
 ├── chrome-extension/
-│   ├── manifest.json          # Chrome extension configuration
-│   ├── popup.html             # Side panel UI
-│   ├── popup.js               # Frontend logic
-│   ├── background.js          # Service worker for side panel
-│   └── content.js             # Content script (future: in-page annotations)
-├── backend.py                 # FastAPI server with RAG pipeline
-├── requirements.txt           # Python dependencies
-├── README.md                  # This file
+│   ├── manifest.json                # Chrome extension configuration
+│   ├── popup.html                   # Side panel UI
+│   ├── popup.js                     # Frontend logic
+│   ├── background.js                # Service worker for side panel
+│   └── content.js                   # Content script (future: in-page annotations)
+├── backend.py                       # FastAPI server with RAG pipeline
+├── requirements.txt                 # Python dependencies
+├── README.md                        # This file
 └── .gitignore
+└── PoC_Evaluation_LLM_as_Judge.md   # Evaluation documentation
+
 ```
 
 ---
