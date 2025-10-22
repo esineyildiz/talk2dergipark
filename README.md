@@ -11,10 +11,12 @@
 
 ### **Chrome Extension:** Available in this repository 
 
+### **Streamlit** https://talk2dergipark.streamlit.app/ 
+
 
 ### **Developer:** [@esineyildiz](https://github.com/esineyildiz) 
 
-[Coming Soon - Streamlit Deployment] 
+
 
 ---
 
@@ -50,6 +52,7 @@ Academic literature review is time-intensive. Researchers often need to quickly 
 - **Generation:** GPT-4o-mini with custom academic assistant prompt
 
 ### 3. **Bilingual Support**
+- **Struggles with retrieving the correct language in some papers, needs to be improved**
 - Automatic language detection and response in the query language
 - Optimized prompts for both Turkish and English academic content
 
@@ -249,6 +252,7 @@ talk2dergipark/
 ## 🚀 Future Enhancements
 
 ### Short-term
+- [ ] **Retrieval language** - Works fine most of the time but needs to be improved
 - [ ] **Chat memory** - Keep previous messages and context
 - [ ] **Persistent storage** - Save processed papers across sessions
 - [ ] **Multi-paper chat** - Compare and contrast multiple papers
