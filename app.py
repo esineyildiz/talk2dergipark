@@ -278,7 +278,7 @@ def create_embeddings_and_store(chunks, paper_url, api_key):
         )
         embeddings.append(_extract_embedding_values(result))
     
-    client = chromadb.Client()
+    client = chromadb.EphemeralClient()
     collection_name = "paper_" + paper_url.split('/')[-1]
     
     try:
