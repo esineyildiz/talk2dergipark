@@ -355,7 +355,7 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 # Header photo
-st.image("url_demonstration.png", use_column_width=True)
+st.image("url_demonstration2.png", use_column_width=True)
 # Sidebar
 with st.sidebar:
     st.markdown("## 🔑 API Keys / API Anahtarları")
