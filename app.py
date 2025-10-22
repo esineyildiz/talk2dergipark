@@ -369,7 +369,7 @@ with st.sidebar:
 # Main area
 # Big, bold instruction
 st.markdown("### 📚 Enter the DergiPark Paper URL below:")
-st.markdown("#### Aşağıya DergiPark makale URL'sini giriniz")
+st.markdown("### 📚 Aşağıya DergiPark makale URL'sini giriniz")
 
 # Then the input box with no label (or small label)
 paper_url = st.text_input("", key="paper_url", 
