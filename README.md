@@ -148,8 +148,56 @@ Key design decisions:
 - Google Gemini API key ([Get here](https://ai.google.dev/))
 - OpenAI API key ([Get here](https://platform.openai.com/))
 - Chrome browser (for extension)
+  
+## 🌐 Streamlit Web Interface
 
-### Backend Setup
+### **Using the Deployed App**
+
+1. **Visit:** https://talk2dergipark.streamlit.app/
+
+2. **Enter API Keys** (in sidebar):
+   - Gemini API Key: For embeddings ([Get here](https://aistudio.google.com/app/apikey))
+   - OpenAI API Key: For text generation ([Get here](https://platform.openai.com/api-keys))
+   - *Note: Keys are not stored; you'll need to re-enter them each session*
+
+3. **Load a Paper:**
+   - Paste any DergiPark paper URL (example: `https://dergipark.org.tr/tr/pub/...`)
+   - Click "Load Paper" button
+   - Wait for processing (typically 10-30 seconds depending on paper length)
+   - You'll see a success message with the number of chunks created
+
+4. **Ask Questions:**
+   - Type your question in Turkish or English in the text box
+   - Click "Ask / Sor" button
+   - View the answer based on paper content
+
+**Example Questions:**
+- Turkish: "Bu makalenin ana bulgusu nedir?"
+- English: "What methodology was used in this study?"
+- Turkish: "Hangi veri seti kullanılmış?"
+- English: "What are the limitations mentioned?" 
+
+###  🔌 Chrome Extension Setup
+
+1. **Complete Backend Setup** (see below)
+
+2. **Run the backend:**
+```bash
+python backend.py
+```
+Backend will be available at `http://127.0.0.1:8000`
+
+3. **Load Extension:**
+   - Open Chrome and navigate to `chrome://extensions/`
+   - Enable "Developer mode" (top-right toggle)
+   - Click "Load unpacked"
+   - Select the `chrome-extension` folder from this repo
+
+4. **Pin the Extension:**
+   - Click the puzzle icon in Chrome toolbar
+   - Pin "talk2DergiPark" for easy access
+
+### 🛠️ Backend Setup
 
 1. **Clone the repository**
 ```bash
@@ -175,19 +223,6 @@ uvicorn backend:app --reload
 
 Backend will be available at `http://127.0.0.1:8000`
 
-### Chrome Extension Setup
-
-1. **Open Chrome Extensions**
-   - Navigate to `chrome://extensions/`
-   - Enable "Developer mode" (top-right toggle)
-
-2. **Load extension**
-   - Click "Load unpacked"
-   - Select the `chrome-extension` folder from this repo
-
-3. **Pin the extension**
-   - Click the puzzle icon in the Chrome toolbar
-   - Pin "talk2DergiPark" for easy access
 
 ### Usage
 
@@ -208,6 +243,7 @@ talk2dergipark/
 │   ├── popup.js                     # Frontend logic
 │   ├── background.js                # Service worker for side panel
 │   └── content.js                   # Content script (future: in-page annotations)
+├── app.py                           # Streamlit web interface
 ├── backend.py                       # FastAPI server with RAG pipeline
 ├── requirements.txt                 # Python dependencies
 ├── README.md                        # This file
@@ -230,6 +266,7 @@ talk2dergipark/
 - **OpenAI API** - Text generation
 
 ### Frontend
+- **Streamlit** - Python-based web UI
 - **Chrome Extension Manifest V3** - Latest extension standard
 - **Chrome Side Panel API** - Persistent UI
 - **Vanilla JavaScript** - No framework overhead
