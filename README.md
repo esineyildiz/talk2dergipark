@@ -11,7 +11,7 @@
 
 ### **Chrome Extension:** Available in this repository 
 
-### **Streamlit** https://talk2dergipark.streamlit.app/ 
+### **Streamlit** https://talk2dergipark.streamlit.app/ (For Akbank GenAI Bootcamp evaluation)
 
 
 ### **Developer:** [@esineyildiz](https://github.com/esineyildiz) 
@@ -26,39 +26,32 @@
 
 ### Inspiration
 
-Inspired by [talk2arxiv](https://github.com/evanhu1/talk2arxiv), I wanted to create a similar tool tailored for Turkish academia, with enhanced PDF processing capabilities and a seamless browser integration via Chrome's Side Panel API.
-
-### Why This Matters
-
-Academic literature review is time-intensive. Researchers often need to quickly extract specific information from papers—methodology details, results, citations—without reading entire documents. This tool accelerates that process by:
-- **Automated document processing** with intelligent header/footer removal
-- **Semantic search** over paper content using state-of-the-art embeddings
-- **Context-aware question answering** with multilingual support (Turkish/English)
-- **Persistent side panel** for uninterrupted research workflow
+Inspired by [talk2arxiv](https://github.com/evanhu1/talk2arxiv), I set out to create a specialized tool for Turkish academia with two key enhancements: intelligent PDF processing to handle the unique formatting challenges of academic papers, and seamless browser integration via Chrome's Side Panel API for an uninterrupted research workflow.
+**Development Context:** This project began as my submission to the Akbank GenAI Bootcamp, where I wanted to demonstrate a practical application of RAG technology for the Turkish research community. While I've included a Streamlit web interface to showcase the core functionality, the Chrome extension represents the project's primary innovation: offering instant access to paper analysis without disrupting the research flow by switching tabs or opening new windows.
+Future Plans: I plan to publish this as a downloadable extension on the Chrome Web Store, making it accessible to everyone. The current version is a developer preview, allowing technically inclined users to deploy it with their own API keys.
 
 ---
 
 ## 🎯 Key Features
 
-### 1. **Intelligent PDF Processing**
+### 1. **PDF Processing**
 - **Automated header/footer detection and removal** using frequency analysis across pages
 - **Smart text extraction** with proper handling of academic paper formatting
 - **Recursive chunking** with semantic overlap for context preservation
 
-### 2. **Advanced RAG Pipeline**
+### 2. **RAG Pipeline**
 - **Embedding Model:** Google's `text-embedding-004` for document and query embeddings
 - **Vector Database:** ChromaDB for efficient similarity search
 - **Retrieval:** Top-8 semantic chunks with relevance ranking
 - **Generation:** GPT-4o-mini with custom academic assistant prompt
 
 ### 3. **Bilingual Support**
-- **Struggles with retrieving the correct language in some papers, needs to be improved**
 - Automatic language detection and response in the query language
 - Optimized prompts for both Turkish and English academic content
 
-### 4. **Modern Chrome Extension UI**
+### 4. **Chrome Extension UI**
 - **Chrome Side Panel API** integration for persistent, distraction-free interface
-- Custom DergiPark-themed design with gradient styling
+- **Quick Access** to chat without needing to change tabs
 - Real-time chat interface with loading states and error handling
 
 ---
@@ -193,7 +186,7 @@ Backend will be available at `http://127.0.0.1:8000`
    - Select the `chrome-extension` folder from this repo
 
 3. **Pin the extension**
-   - Click the puzzle icon in Chrome toolbar
+   - Click the puzzle icon in the Chrome toolbar
    - Pin "talk2DergiPark" for easy access
 
 ### Usage
@@ -252,7 +245,6 @@ talk2dergipark/
 ## 🚀 Future Enhancements
 
 ### Short-term
-- [ ] **Retrieval language** - Works fine most of the time but needs to be improved
 - [ ] **Chat memory** - Keep previous messages and context
 - [ ] **Persistent storage** - Save processed papers across sessions
 - [ ] **Multi-paper chat** - Compare and contrast multiple papers
