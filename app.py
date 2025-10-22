@@ -367,8 +367,13 @@ with st.sidebar:
     st.caption("• [Get OpenAI API Key](https://platform.openai.com/api-keys)")
 
 # Main area
-paper_url = st.text_input("📚 Enter Dergipark Paper URL: / Dergipark makale URL'si giriniz:", key="paper_url", 
-                         placeholder="https://dergipark.org.tr/tr/pub/...")
+paper_url = st.text_area(
+    "📚 Enter Dergipark Paper URL: / Dergipark makale URL'si giriniz:", 
+    key="paper_url",
+    placeholder="https://dergipark.org.tr/tr/pub/...",
+    height=80,  # Makes it taller
+    max_chars=500
+)
 
 col1, col2 = st.columns([1, 4])
 with col1:
