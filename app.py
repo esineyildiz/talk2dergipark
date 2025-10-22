@@ -367,13 +367,14 @@ with st.sidebar:
     st.caption("• [Get OpenAI API Key](https://platform.openai.com/api-keys)")
 
 # Main area
-paper_url = st.text_area(
-    "📚 Enter Dergipark Paper URL: / Dergipark makale URL'si giriniz:", 
-    key="paper_url",
-    placeholder="https://dergipark.org.tr/tr/pub/...",
-    height=80,  # Makes it taller
-    max_chars=500
-)
+# Big, bold instruction
+st.markdown("### 📚 Enter the DergiPark Paper URL below:")
+st.markdown("#### Aşağıya DergiPark makale URL'sini giriniz")
+
+# Then the input box with no label (or small label)
+paper_url = st.text_input("", key="paper_url", 
+                         placeholder="https://dergipark.org.tr/tr/pub/...",
+                         label_visibility="collapsed")
 
 col1, col2 = st.columns([1, 4])
 with col1:
